@@ -2,36 +2,46 @@ namespace csharp_practice.exercises;
 
 public class SimpleCalculator
 {
-    private double FirstNumber { get; set; }
-    private double SecondNumber { get; set; }
+    private double firstNumber;
+    private double secondNumber;
 
+    public double getFirstNumber()
+    {
+        return firstNumber;
+    }
+
+    public double getSecondNumber()
+    {
+        return secondNumber;
+    }
+    
     public void setFirstNumber(double number)
     {
-        FirstNumber = number;
+        firstNumber = number;
     }
     
     public void setSecondNumber(double number)
     {
-        SecondNumber = number;
+        secondNumber = number;
     }
     
     public double getAdditionResult()
     {
-        return FirstNumber + SecondNumber;
+        return firstNumber + secondNumber;
     }
 
     public double getSubtractionResult()
     {
-        return FirstNumber - SecondNumber;
+        return firstNumber - secondNumber;
     }
 
     public double getMultiplicationResult()
     {
-        return FirstNumber * SecondNumber;
+        return firstNumber * secondNumber;
     }
 
     public double getDivisionResult()
     {
-        return SecondNumber != 0 ? FirstNumber / SecondNumber : 0;
+        return secondNumber != 0 ? firstNumber / secondNumber : 0;
     }
 }
